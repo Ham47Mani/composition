@@ -1,0 +1,88 @@
+@media (min-width: 992px) {
+  header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  header .navbar {
+    float: right;
+  }
+}
+header .navbar li {
+  float: right;
+}
+@media (max-width: 600px) {
+  header .navbar li {
+    text-align: right;
+  }
+}
+@media (min-width: 600px) {
+  header .navbar li {
+    text-align: right;
+  }
+}
+@media (min-width: 768px) {
+  header .navbar li {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .players .player-box {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .lorem-ipsum .lorem-box {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .gallery {
+    float: right;
+  }
+}
+footer .gallery .img-box img {
+  float: right;
+}
+footer .gallery .img-box .text {
+  float: right;
+}
+@media (min-width: 600px) {
+  footer .info {
+    float: right;
+    text-align: right;
+  }
+}
+@media (min-width: 600px) {
+  footer .contact {
+    float: right;
+    text-align: right;
+  }
+}
+@media (min-width: 600px) {
+  footer .copyright .CopyText, footer .copyright .CopyAuthor {
+    text-align: right;
+  }
+}
+@media (min-width: 768px) {
+  footer .copyright .CopyText, footer .copyright .CopyAuthor {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  footer .copyright .CopyAuthor {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=style_rtl.css.map */

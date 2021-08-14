@@ -1,0 +1,13 @@
+//--> Main Rules
+* { @include prefixAll(box-sizing, border-box); }
+
+//--> Make Style For Body
+body {
+    background-color: #F6F6F6;
+    font: {
+        family: Tahome, sans-serif;
+        size: 16px;
+    }
+}
+
+p { color: $grayColor }

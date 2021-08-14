@@ -1,0 +1,55 @@
+//======================================= Start Header ============================
+header {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid $grayColor;
+    .logo {
+        position: relative;
+        //--> Container In Mediume Screen
+        @include MScreen { width: 100%; float: none; text-align: center }
+        //--> Container In Large Screen
+        @include LScreen { width: 30%; float: $float-left; text-align: $text-left }
+        h1 { margin-bottom: 0; margin-top: 15px }
+        p { color: $grayColor; font-size: 12px }
+    }
+    .navbar {
+        background: $mainColor;
+        border-radius: 15px;
+        overflow: hidden;
+        //--> Container In Extra Small Screen
+        @include XsScreen { display: none; border-radius: 0; width: 100vw; margin-left: -15px }
+        //--> Container In Small Screen
+        @include SScreen { display: none; border-radius: 0; width: 100vw; margin-left: -15px }
+        //--> Container In Mediume Screen
+        @include MScreen {
+            width: 100%;
+            float: none;
+            margin-top: 30px;
+            margin-left: 0;
+            display: block;
+            border-radius: 15px;
+        }
+        //--> Container In Large Screen
+        @include LScreen { width: 70%; float: $float-left; margin-top: 1em }
+        li {
+            float: $float-left; //--> Attention For Rtl Direction
+            font-size: 18px;
+            //--> Container In Extra Small Screen
+            @include XsScreen { display: block; float: none; width: 100%; text-align: $text-left; margin: 0 10px }
+            //--> Container In Small Screen
+            @include SScreen { display: block; float: none; width: 100%; text-align: $text-left; margin: 0 10px }
+            //--> Container In Mediume Screen
+            @include MScreen { display: inline-block; float: $float-left; width: 20%; text-align: center; margin: 0 }
+            a {
+                display: block;
+                padding: 20px 10px;
+                color: #FFF;
+                text-decoration: none;
+                &:hover {
+                    color: #DDD
+                }
+            }
+        }
+    }
+}
+//======================================= End Header ============================

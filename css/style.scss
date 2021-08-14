@@ -1,0 +1,32 @@
+//--> Import Variables
+@import 'sass/helpers/variables';
+
+//--> Import Functions
+@import 'sass/helpers/functions';
+
+//--> Import Mixins
+@import 'sass/helpers/mixins';
+
+//--> Import Global Rules
+@import 'sass/helpers/helperClasses';
+
+//--> Import Global Rules
+@import 'sass/pages/global';
+
+//--> Import Grid System
+@import 'sass/layout/grid';
+
+//--> Import Header
+@import 'sass/layout/header';
+
+//--> Import Components (Headings)
+@import 'sass/components/headings';
+
+//--> Import Components (Buttons)
+@import 'sass/components/buttons';
+
+//--> Import Home Page
+@import 'sass/pages/homepage';
+
+//--> Import Footer
+@import 'sass/layout/footer';

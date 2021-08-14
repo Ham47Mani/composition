@@ -1,0 +1,13 @@
+//--> The Container Customize
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    //--> Container In Mediume Screen
+    @include MScreen { width: 750px }
+    //--> Container In Large Screen
+    @include LScreen { width: 970px }
+    //--> Container In Extra Large Screen
+    @include XlScreen { width: 1170px }
+}

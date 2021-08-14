@@ -1,0 +1,11 @@
+//--> Normalize The Ul Have Class list-unstyled
+.list-unstyled { list-style: none; padding: 0 }
+
+//--> Clear Float In Both Side
+.clearfix { clear: both }
+
+//--> Make Text Align Center
+.text-center-xs {
+    @media (max-width: 767px) { text-align: center }
+    @media (min-width: 768px) and (max-width: 991px ) { text-align: center }
+}

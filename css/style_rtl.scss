@@ -1,0 +1,98 @@
+//--> Import Variables
+@import 'sass/helpers/variables';
+
+//--> Import Mixins
+@import 'sass/helpers/mixins';
+
+$float-left: right; //--> For Make Element Float Right
+$float-right: left; //--> For Make Element Float Left
+
+$text-right: left; //--> Make Text In Left Of Screen
+$text-left: right; //--> Make Text In Right Of Screen
+
+//======================================= Start Header ============================
+header {
+    .logo {
+        //--> Container In Large Screen
+        @include LScreen {float: $float-left; text-align: $text-left }
+    }
+    .navbar {
+        //--> Container In Large Screen
+        @include LScreen { float: $float-left }
+        li {
+            float: $float-left; //--> Attention For Rtl Direction
+            //--> Container In Extra Small Screen
+            @include XsScreen { text-align: $text-left }
+            //--> Container In Small Screen
+            @include SScreen { text-align: $text-left }
+            //--> Container In Mediume Screen
+            @include MScreen { float: $float-left }
+        }
+    }
+}
+//======================================= End Header ============================
+
+//======================================= Start Our Services ============================
+.services {
+    .service-box {
+        //--> Container In Large Screen
+        @include LScreen { float: $float-left }
+    }
+}
+//======================================= End Our Services ============================
+
+//======================================= Start Our Players ============================
+.players {
+    .player-box {
+        //--> Container In Mediume Screen
+        @include MScreen { float: $float-left }
+    }
+}
+//======================================= End Our Players ============================
+
+//======================================= Start Lorem Ipsum ============================
+.lorem-ipsum {
+    .lorem-box {
+        //--> Container In Mediume Screen
+        @include MScreen { float: $float-left }
+    }
+}
+//======================================= End Lorem Ipsum ============================
+
+//======================================= Start Footer ============================
+footer {
+    //--> Gallery
+    .gallery {
+        //--> Container In Large Screen
+        @include LScreen { float: $float-left }
+        .img-box {
+            img { float: $float-left }
+            .text { float: $float-left }
+        }
+    }
+    //--> Info
+    .info {
+        //--> Container In Small Screen
+        @include SScreen { float: $float-left; text-align: $text-left }
+    }
+    //--> Contact Us
+    .contact {
+        //--> Container In Small Screen
+        @include SScreen { float: $float-left; text-align: $text-left }
+    }
+
+    //--> CopyRight
+    .copyright {
+        .CopyText, .CopyAuthor {
+            //--> Container In Small Screen
+            @include SScreen { text-align: $text-left }
+            //--> Container In Medium Screen
+            @include MScreen { float: $float-left }
+        }
+        .CopyAuthor {
+            //--> Container In Medium Screen
+            @include MScreen { text-align: $text-right; }
+        }
+    }
+}
+//======================================= End Footer ============================

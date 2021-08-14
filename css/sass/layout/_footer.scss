@@ -1,0 +1,102 @@
+//======================================= Start Footer ============================
+footer {
+    background-color: #E2E2E2;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    //--> Gallery
+    .gallery {
+        //--> Container In Extra Small Screen
+        @include XsScreen { margin-bottom: 30px }
+        //--> Container In Small Screen
+        @include SScreen { margin-bottom: 30px }
+        //--> Container In Large Screen
+        @include LScreen { width: 50%; float: $float-left }
+        .img-box {
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+                float: $float-left;
+                width: 150px;
+                height: 150px;
+                padding: 3px;
+                border: 1px solid #333;
+                background-color: #FFF;
+            }
+            .text {
+                width: calc(100% - 180px);
+                float: $float-left;
+                margin-right: 15px;
+                margin-left: 15px;
+                h4 { color: $mainColor; margin: 5px 0 0 }
+                p { margin-top: 8px; color: #AAA; line-height: 1.5; text-align: justify }
+            }
+        }
+    }
+    //--> Info
+    .info {
+        //--> Container In Extra Small Screen
+        @include XsScreen { margin-bottom: 30px; text-align: center }
+        //--> Container In Small Screen
+        @include SScreen { width: 50%; float: $float-left; text-align: $text-left }
+        //--> Container In Large Screen
+        @include LScreen { width: 25%; }
+        ul {
+            color: #AAA;
+            line-height: 1.6;
+            li {
+                span { color: $mainColor; font-weight: bold }
+            }
+        }
+        .working { color: #999; font-weight: bold; margin-bottom: 0 }
+        p { color: #AAA; margin-top: 8px }
+    }
+    //--> Contact Us
+    .contact {
+        //--> Container In Extra Small Screen
+        @include XsScreen { margin-bottom: 30px; text-align: center }
+        //--> Container In Small Screen
+        @include SScreen { width: 50%; float: $float-left; text-align: $text-left }
+        //--> Container In Large Screen
+        @include LScreen { width: 25%; }
+        input[type="text"], input[type="email"], textarea {
+            outline: none;
+            border-radius: 4px;
+            border: 1px solid #C9C9C9;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            &:focus {
+                border: 1px solid $mainColor
+            }
+        }
+        textarea { height: 130px; resize: none }
+    }
+
+    //--> CopyRight
+    .copyright {
+        margin-top: 30px;
+        padding: 15px 0;
+        border-top: 1px solid #C5C5C5;
+        overflow: hidden;
+        .CopyText, .CopyAuthor {
+            color: #999;
+            //--> Container In Extra Small Screen
+            @include XsScreen { margin-bottom: 10px; text-align: center }
+            //--> Container In Small Screen
+            @include SScreen { margin-bottom: 10px; text-align: $text-left }
+            //--> Container In Medium Screen
+            @include MScreen { float: $float-left; width: 50% }
+        }
+        .CopyAuthor {
+            //--> Container In Extra Small Screen
+            @include XsScreen { margin-bottom: 0 }
+            //--> Container In Small Screen
+            @include SScreen { margin-bottom: 0 }
+            //--> Container In Medium Screen
+            @include MScreen { text-align: $text-right; }
+        }
+    }
+}
+//======================================= End Footer ============================

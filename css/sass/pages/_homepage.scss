@@ -1,0 +1,128 @@
+//======================================= Start Slider ============================
+.slider {
+    q {
+        display: block;
+        line-height: 1.7;
+        text-align: center;
+        color: #5E5E5E;
+        width: 80%;
+        margin: 30px auto;
+        font: {
+            size: 20px;
+            style: italic;
+            weight: bold;
+            family: Tahome, arial, sans-serif;
+        }
+    }
+    img { max-width: 100% }
+    .bullets {
+        text-align: center;
+        li {
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            background-color: $grayColor;
+            border: 3px solid $grayColor;
+            border-radius: 50%;
+            cursor: pointer;
+            @include prefixAll(transition, all .3s ease);
+            &.active, &:hover { background-color: #FFF; border: 3px solid #333 }
+        }
+    }
+}
+//======================================= End Slider ============================
+
+//======================================= Start Our Services ============================
+.services {
+    .service-box {
+        //--> Container In Extra Small Screen
+        @include XsScreen { width: 100%; float: none; margin-bottom: 20px }
+        //--> Container In Small Screen
+        @include SScreen { width: 100%; float: none; margin-bottom: 20px }
+        //--> Container In Mediume Screen
+        @include MScreen { width: 100%; float: none; margin-bottom: 20px }
+        //--> Container In Large Screen
+        @include LScreen {
+            float: $float-left;
+            width: (100% /3);
+            margin-bottom: 0;
+            &:not(:last-of-type) { padding-right: 20px }
+        }
+        .service-title {
+            color: #333;
+            i {
+                font-size: 40px;
+                //--> Container In Extra Small Screen
+                @include XsScreen { width: 100%; margin-bottom: 20px }
+                //--> Container In Small Screen
+                @include SScreen { width: 100%; margin-bottom: 20px }
+                //--> Container In Mediume Screen
+                @include MScreen { width: 100%; margin-bottom: 20px }
+                //--> Container In Large Screen
+                @include LScreen { width: auto }
+                //--> Container In Large Screen
+                @include XlScreen { position: relative; top: 5px; margin-bottom: 0 }
+            }
+            span { margin: 0 20px }
+        }
+        .service-desc { text-align: justify; color: $grayColor; line-height: 1.4 }
+        .link { text-decoration: none; color: $mainColor }
+    }
+}
+//======================================= End Our Services ============================
+
+//======================================= Start Our Players ============================
+.players {
+    .player-box {
+        //--> Container In Extra Small Screen
+        @include XsScreen { margin-bottom: 40px }
+        //--> Container In Small Screen
+        @include SScreen { margin-bottom: 40px }
+        //--> Container In Mediume Screen
+        @include MScreen {
+            float: $float-left;
+            width: (100% /2);
+            padding-left: 15px;
+            padding-right: 15px;
+            &:last-of-type { display: none }
+        }
+        //--> Container In Large Screen
+        @include LScreen {
+            width: (100% /5);
+            &:last-of-type { display: block }
+        }
+        img { max-width: 100% }
+        .player-title {
+            color: $grayColor;
+            font-weight: normal;
+            span { font-weight: bold; display: inline-block }
+        }
+        .player-desc {
+            color: $grayColor;
+            line-height: 1.4;
+            //--> Container In Mediume Screen
+            @include MScreen { text-align: justify }
+        }
+        .link { text-decoration: none; color: $mainColor }
+    }
+}
+//======================================= End Our Players ============================
+
+//======================================= Start Lorem Ipsum ============================
+.lorem-ipsum {
+    .lorem-box {
+        //--> Container In Extra Small Screen
+        @include XsScreen { margin-bottom: 30px }
+        //--> Container In Small Screen
+        @include SScreen { margin-bottom: 30px }
+        //--> Container In Mediume Screen
+        @include MScreen {
+            float: $float-left;
+            width: (94% /3);
+            &:not(:last-of-type) { margin-right: 3% }
+        }
+        .lorem-img { max-width: 100% }
+    }
+}
+//======================================= End Lorem Ipsum ============================
